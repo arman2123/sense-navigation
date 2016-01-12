@@ -1,0 +1,130 @@
+{
+	"rows": [
+		{
+			"dimensions": [
+				{
+					"qText": "IT Infrastructure",
+					"selected": false
+				}
+			],
+			"measures": [
+				{
+					"qText": "16.538744",
+					"qNum": 16.538743997717155,
+					"qMeasureInfo": {
+						"qMax": 41.422700513013275,
+						"qMin": 9.025133371016397
+					}
+				}
+			]
+		},
+		{
+			"dimensions": [
+				{
+					"qText": "Non-IT/Systems",
+					"selected": false
+				}
+			],
+			"measures": [
+				{
+					"qText": "9.0251334",
+					"qNum": 9.025133371016397,
+					"qMeasureInfo": {
+						"qMax": 41.422700513013275,
+						"qMin": 9.025133371016397
+					}
+				}
+			]
+		},
+		{
+			"dimensions": [
+				{
+					"qText": "Operations",
+					"selected": true
+				}
+			],
+			"measures": [
+				{
+					"qText": "36.70164",
+					"qNum": 36.701640223709305,
+					"qMeasureInfo": {
+						"qMax": 41.422700513013275,
+						"qMin": 9.025133371016397
+					}
+				}
+			]
+		},
+		{
+			"dimensions": [
+				{
+					"qText": "Systems",
+					"selected": false
+				}
+			],
+			"measures": [
+				{
+					"qText": "11.366166",
+					"qNum": 11.366165516367278,
+					"qMeasureInfo": {
+						"qMax": 41.422700513013275,
+						"qMin": 9.025133371016397
+					}
+				}
+			]
+		},
+		{
+			"dimensions": [
+				{
+					"qText": "Systems Development",
+					"selected": false
+				}
+			],
+			"measures": [
+				{
+					"qText": "41.422701",
+					"qNum": 41.422700513013275,
+					"qMeasureInfo": {
+						"qMax": 41.422700513013275,
+						"qMin": 9.025133371016397
+					}
+				}
+			]
+		},
+		{
+			"dimensions": [
+				{
+					"qText": "Web Infrastructure",
+					"selected": false
+				}
+			],
+			"measures": [
+				{
+					"qText": "21.181133",
+					"qNum": 21.181132775403842,
+					"qMeasureInfo": {
+						"qMax": 41.422700513013275,
+						"qMin": 9.025133371016397
+					}
+				}
+			]
+		},
+		{
+			"dimensions": [
+				{
+					"qText": "Web Infrastructure",
+					"selected": false
+				}
+			],
+			"measures": [
+				{
+					"qText": "14.000852",
+					"qNum": 14.000851747305383,
+					"qMeasureInfo": {
+						"qMax": 41.422700513013275,
+						"qMin": 9.025133371016397
+					}
+				}
+			]
+		}
+	]
+}
