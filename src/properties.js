@@ -3,10 +3,9 @@ define( [
 	'jquery',
 	'underscore',
 	'qlik',
-	'./lib/external/sense-extension-utils/extUtils',
 	'ng!$q',
 	'ng!$http'
-], function ( $, _, qlik, extUtils, $q, $http ) {
+], function ( $, _, qlik, $q, $http ) {
 
 	var app = qlik.currApp();
 
@@ -72,6 +71,7 @@ define( [
 		return defer.promise;
 
 	};
+
 	var getIcons = function () {
 		var defer = $q.defer();
 
@@ -541,9 +541,21 @@ define( [
 		}
 	};
 
+	return {
+		fetch: function () {
+			console.log( "fetch called" );
+			$http.get( "/hello.html" )
+				.then( function ( response ) {
+					console.log( "success" );
+				}, function ( response ) {
+					console.log( response );
+				} );
+		}
+	};
+
 	// ****************************************************************************************
 	// Return Values
 	// ****************************************************************************************
-	return panelDefinition;
+	//return panelDefinition;
 
 } );

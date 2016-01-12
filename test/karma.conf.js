@@ -11,6 +11,7 @@ module.exports = function ( config ) {
 		// list of files / patterns to load in the browser
 		files: [
 			{pattern: 'node_modules/jquery/dist/jquery.js', included: false},
+			{pattern: 'node_modules/underscore/underscore-min.js', included: false},
 			{pattern: 'node_modules/requirejs-text/text.js', included: false},
 			{pattern: 'node_modules/angular/angular.js', included: false},
 			{pattern: 'node_modules/angular-mocks/angular-mocks.js', included: false},
@@ -24,9 +25,9 @@ module.exports = function ( config ) {
 			{pattern: 'src/lib/css/main.css', included: false},
 			{pattern: 'src/swr-sense-navigation.js', included: false},
 
-			//{pattern: 'src/lib/external/sense-extension-utils/extUtils.js', included: false},
-			//{pattern: 'src/properties.js', included: false},
-			//{pattern: 'src/initialproperties.js', included: false},
+			{pattern: 'src/lib/external/sense-extension-utils/extUtils.js', included: false},
+			{pattern: 'src/properties.js', included: false},
+			{pattern: 'src/initialproperties.js', included: false},
 
 			'test/test-config.js'
 		],

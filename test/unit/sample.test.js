@@ -1,59 +1,30 @@
-define( [
-		'jquery',
-		'angular'
-	],
-	function ( $, angular ) {
+define( ['angular', 'angularMocks', 'properties'],
+	function ( angular, angularMocks, props ) {
 		describe( 'Dummy test', function () {
-			//beforeEach(angular.module("test"));
 
-			//beforeEach( angular.mock.inject( function ( $rootScope ) {
-			//	console.log( "inject worked" );
-			//} ) );
+			var httpBackend, http;
+
+			beforeEach( function () {
+				inject( function ( $httpBackend, $http ) {
+					httpBackend = $httpBackend;
+					http = $http;
+				} );
+			} );
+
+			afterEach( function () {
+			} );
 
 			it( "should always pass", function () {
-				var $injector = angular.injector();
-				console.log( $injector );
-				//console.log( angularmocks );
 				expect( 1 ).toBe( 1 );
-
 			} );
 
-			it( "should always pass", function () {
-				var $injector = angular.injector();
-				console.log( $injector );
-				console.log( $injector );
-				//console.log( angularmocks );
-				expect( $injector.get( '$injector' ) ).toBe( $injector );
-
-				var $injector2 = window.angular.injector( ['ng'] );
-				var http = $injector2.get( '$http' );
-
-				console.log( http );
+			it( 'should fetch authentication token', function () {
+				httpBackend.expectGET( '/hello.html' ).respond( "RESULT" );
+				http.get( '/hello.html' );
+				//props.fetch();
+				httpBackend.flush();
 			} );
 
-			it( "should always pass", function () {
-				var $injector = angular.injector();
-				console.log( $injector );
-				//console.log( angularmocks );
-
-				expect( $injector.invoke( function ( $injector ) {
-					return $injector;
-				} ) ).toBe( $injector );
-			} );
-
-			//it( "sets extension's scope with data", function () {
-			//	var x;
-			//	//angular.inject( function ( $rootScope ) {
-			//	//	x = $rootScope.$new();
-			//	//} );
-			//
-			//	console.log( angular.mock );
-			//
-			//	inject( function ( $rootScope ) {
-			//	} );
-			//
-			//	//expect( x ).not.toBe( undefined );
-			//} );
 		} );
 	}
 );

@@ -3,7 +3,7 @@ define( function () {
 	'use strict';
 
 	return {
-		table: function () {
+		currApp: function () {
 			// stub
 		}
 	};
