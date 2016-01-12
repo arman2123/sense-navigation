@@ -1,17 +1,24 @@
 ﻿define( ['angular'], function ( angular ) {
+
 	return {
+
 		load: function ( name, req, onload, config ) {
-			console.log( "called requirejs load for " + name );
-			//onload( "hello world" );
 
-			var $injector = window.angular.injector( ['ng'] );
-			var service = $injector.get( name );
+			var injector = angular.injector( ['ng'] );
 
-			onload( service );
+			var $http = injector.get( '$http' );
+			var $rootScope = injector.get( '$rootScope' );
 
-			console.log( "Service injected" );
+			$rootScope.$apply( function () {
+				$http.get( "/base/src/hello.html" )
+					.then( function ( response ) {
+						var names = response.data;
+						console.log( names );
+					} );
+			} );
+
+			onload( $http );
+
 		}
 	};
 } );
-
-

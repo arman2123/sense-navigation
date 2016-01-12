@@ -21,9 +21,8 @@ require.config( {
 		'text': 'node_modules/requirejs-text/text',
 		'qlik': 'test/stubs/qlik.stub',
 		'angular': 'node_modules/angular/angular',
-		'angularMocks': 'node_modules/angular-mocks/angular-mocks',
+		'angularmocks': 'node_modules/angular-mocks/angular-mocks',
 		'ng': 'test/stubs/injector-require-plugin.stub',
-
 		'properties': 'src/properties',
 		'initialproperties': 'src/initialproperties'
 
@@ -33,7 +32,7 @@ require.config( {
 		"angular": {
 			exports: "angular"
 		},
-		"angularMocks": {
+		"angularmocks": {
 			deps: ["angular"]
 		},
 		'underscore': {
