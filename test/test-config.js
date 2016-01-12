@@ -17,15 +17,14 @@ require.config( {
 	paths: {
 		'jquery': 'node_modules/jquery/dist/jquery',
 		'underscore': 'node_modules/underscore/underscore-min',
-		'sinon': 'node_modules/sinon/pkg/sinon',
 		'text': 'node_modules/requirejs-text/text',
-		'qlik': 'test/stubs/qlik.stub',
 		'angular': 'node_modules/angular/angular',
 		'angularmocks': 'node_modules/angular-mocks/angular-mocks',
+		'qlik': 'test/stubs/qlik.stub',
 		'ng': 'test/stubs/injector-require-plugin.stub',
 		'properties': 'src/properties',
-		'initialproperties': 'src/initialproperties'
-
+		'initialproperties': 'src/initialproperties',
+		'sinon': 'node_modules/sinon/pkg/sinon'
 	}
 	,
 	shim: {
