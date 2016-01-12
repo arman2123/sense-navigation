@@ -9,13 +9,15 @@ define( [
 	return {
 
 		fetch: function () {
-			console.log( "fetch called" );
+			//console.log( "fetch called" );
+			//
+			//var url = '/path/to/resource';
+			//
+			//$http.get( url ).success( function ( response ) {
+			//	console.log( JSON.stringify( response ) );
+			//} );
 
-			var url = '/path/to/resource';
-
-			$http.get( url ).success( function ( response ) {
-				console.log( JSON.stringify( response ) );
-			} );
+			$http.get( "/base/src/hello.html" );
 		},
 
 		fetch2: function () {

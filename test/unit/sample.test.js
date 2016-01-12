@@ -1,5 +1,5 @@
-define( ['angular', 'angularmocks', 'properties'],
-	function ( angular, angularmocks, props, $http ) {
+define( ['angular', 'angularmocks', 'properties', 'ng!$http', 'sinon'],
+	function ( angular, angularmocks, props, $http, sinon ) {
 		describe( 'Dummy test', function () {
 			//var httpBackend, http;
 
@@ -53,7 +53,20 @@ define( ['angular', 'angularmocks', 'properties'],
 			//} ) );
 
 			it( "test", function () {
-				props.fetch2();
+
+				sinon.stub( $http, "get", function ( url ) {
+
+					console.log( "stub called for $http" );
+
+					//$rootScope.$apply( function () {
+					//	$http.get( url )
+					//		.then( function ( response ) {
+					//			console.log( response.data );
+					//		} );
+					//} );
+				} );
+
+				props.fetch();
 				console.log( "test 1" );
 			} );
 
