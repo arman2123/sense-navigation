@@ -24,7 +24,6 @@ module.exports = function ( config ) {
 			{pattern: 'src/template.ng.html', included: false},
 			{pattern: 'src/lib/css/main.css', included: false},
 			{pattern: 'src/swr-sense-navigation.js', included: false},
-			{pattern: 'src/hello.html', included: false},
 
 			{pattern: 'src/lib/external/sense-extension-utils/extUtils.js', included: false},
 			{pattern: 'src/properties.js', included: false},
